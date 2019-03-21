@@ -6,8 +6,18 @@ Calculate something for user
 
 <form name="fm1">
 Amount: <input name="amount">
-<br />
+    <br />
+    Term: <select name=term>
+    <option value="15">15 fixed</option>
+    <option value="30">30 fixed</option>
+    </select>
+    <br />
+    Rate: <select name=rate></select>
+    <br />
 <input type="button" value="Calculate" onclick="putResult()">
 <br />
 Result: <input name="result">
 </form>
+<script>
+    fillRateDropDown();
+</script>
