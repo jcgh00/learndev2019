@@ -4,7 +4,7 @@ function add1(val){
     return val+10;
 }
 function complexCalc(val,rate,trm){
-    return "**"+val+"?"+rate+"/"+trm;
+    return val*Math.pow((1+rate/12),trm);
 }
 function alert1(){
     console.log(1);
